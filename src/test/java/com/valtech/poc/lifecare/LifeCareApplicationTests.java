@@ -6,19 +6,15 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.valtech.poc.lifecare.service.LifeCareServiceDAO;
+import com.valtech.poc.lifecare.service.UserService;
 
 @SpringBootTest
 class LifeCareApplicationTests {
 
 	@Autowired
-	private LifeCareServiceDAO serviceDAO;
+	private UserService serviceDAO;
 
-	@Test
-	void contextLoads() {
-
-		System.out.println("Hello World!!");
-	}
+	
 
 	@Test
 	void testLifeCareServiceDAO() {

@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "LifeCareUserDetails")
-public class LifeCareUserDetails {
+@Table(name = "User")
+public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,10 +76,10 @@ public class LifeCareUserDetails {
 		this.roles = roles;
 	}
 
-	public LifeCareUserDetails() {
+	public User() {
 	}
 
-	public LifeCareUserDetails(String name, String email, String password, String phoneNumber, String governmentUID,
+	public User(String name, String email, String password, String phoneNumber, String governmentUID,
 			String roles) {
 		this.name = name;
 		this.email = email;
@@ -89,7 +89,7 @@ public class LifeCareUserDetails {
 		this.roles = roles;
 	}
 
-	public LifeCareUserDetails(int id, String name, String email, String password, String phoneNumber,
+	public User(int id, String name, String email, String password, String phoneNumber,
 			String governmentUID, String roles) {
 		this.id = id;
 		this.name = name;
